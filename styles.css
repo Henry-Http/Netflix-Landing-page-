@@ -7,25 +7,27 @@ body, html {
 /* HEADER */
 
 .header {
-    display: block;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(20, 17, 17, 0.73)),url("img/Netflix-Screen-Shot.jpg");
+    /* display: block; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),url("img/Netflix-Screen-Shot.jpg");
     border-bottom: 8px solid rgb(70, 68, 68);
-    background-position: center;    
+    background-position: center;
+    background-size: cover; 
+    height: 100%;
 }
 
 .nav-bar {
-    display: flex;
+    display: inline-block;
+    width: 100%;
     padding: 0;
 }
 
 .logo img {
     /* border: 1px solid red; */
-    width: 90px;
+    width: 99px;
     margin-right: 60px;
-
-    /* float: left; */
+    float: left;
     margin-left: 10px;
-    margin-top: -20px;
+    margin-top: -17px;
 }
 
 .sign-in button {
@@ -36,9 +38,9 @@ body, html {
     text-align: center;
     text-decoration: none;
     font-size: 13px;
-    /* float: right; */
+    float: right;
     border-radius: 4px;
-    margin-left: 80px;
+    margin-right: 20px;
     margin-top: 20px;
     font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -145,7 +147,8 @@ body, html {
 
 .part2 h1 {
     margin-top: 60px;
-    font-size: 25.2px;
+    font-size: 27px;
+    padding: 5px;
     line-height: 29px;
     font-weight: 600;
 }
@@ -171,9 +174,9 @@ body, html {
 }
 
 .part3 h2 {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 400;
-    padding: 8px;
+    padding: 15px;
     margin-top: -10px;
 }
 
@@ -218,12 +221,26 @@ body, html {
     box-sizing: border-box;
 }
 
-.get-started2 {
-    margin-top: 10px;
-    /* border: 1px solid red; */
+
+
+
+.get-started2 button {
+    text-align: center;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    /* float: right; */
+    border-radius: 2px;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 55px;
+    /* margin-top: 10px;
     text-align: center;
     justify-content: center;
-    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
 
 /* FOOTER */
@@ -265,8 +282,783 @@ body, html {
 
     /* MEDIA QUERY */
 
-    @media screen and (max-width: 725px) {
+    @media screen and (max-width: 768px) and (min-width: 481px) {
         .header {
+            height: 100%;
+        }
+
+        .nav-bar {
+            margin-bottom: 70px;
+        }
+
+        .logo img {
+            width: 130px;
+            margin-left: 30px;
+            margin-top: -30px;
+        }
+
+        .sign-in button {
+            padding: 10px 20px;
+            margin-right: 50px;
+            font-size: 16px;
+        }
+
+        .first-writeup {
+            font-size: 25px;
+            padding: 0px 60px;
+            line-height: 55px;
+            margin-bottom: -15px;
+        }
+
+        .second-writeup {
+            font-size: 16.7px;
+            padding: 0 56px;
+        }
+
+        .third-writeup {
+            font-size: 18px;
+            padding: 0 160px;
+        }
+
+        #email {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .section2-container {
+
+        }
+
+        .section2-container img {
+            width: 600px;
+            object-fit: cover;
+        }
+
+        .part1 {
+            margin-top: 90px;
+        }
+
+        .part1 h1 {
+            font-size: 40px;
+        }
+
+        .part1 h2 {
+            font-size: 20px;
+            padding: 0 40px;
+        }
+
+        .part2 {
+            margin-top: 70px;
+    
+        }
+
+        .part2 img {
+            margin-top: -20px;
+        }
+
+        .part2 h1 {
+            font-size: 40px;
+            padding: 0 45px;
+            line-height: 45px;
+
+        }
+
+        .part2 h2 {
+            font-size: 20px;
+            padding: 0 40px;
+        }
+
+        .part3 {
+            margin-top: 70px;
+    
+        }
+
+        .part3 img {
+            margin-top: -18px;
+        }
+
+        .part3 h1 {
+            font-size: 40px;
+            padding: 0 45px;
+            line-height: 45px;
+
+        }
+
+        .part3 h2 {
+            /* border: 1px solid red; */
+            font-size: 21px;
+            padding: 0px 40px 0 40px;
+            margin-top: -20px;
+        }
+
+        .faq {
+            margin-top: 40px;
+        }
+
+        .faq h1 {
+            font-size: 40px;
+        }
+
+        .faq ul  {
             
         }
+
+        .faq li {
+            width: 75%;
+            margin: 0 30px 10px 80px;
+        }
+
+        .third-writeup2 h3{
+            font-size: 26.5px;
+            padding: 0 60px;
+            margin: 0 40px 10px 40px;
+        }
+
+        #email2 {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .footer {
+            margin: 45px 0 0 45px;
+
+        }
+
+        .footer p {
+        }
+
+        .footer ul {
+        -ms-column-count: 4;
+        -o-column-count: 4;
+        -moz-column-count: 4;
+        -khtml-column-count: 4;
+        column-count: 4;
+        }
+
+        .footer li {
+
+        }
+
     }
+
+    @media screen and (max-width: 1024px) and (min-width: 769px) {
+        .header {
+            height: 100vh;
+
+        }
+
+        .nav-bar {
+
+        }
+
+        .logo img {
+            width: 160px;
+            margin: -40px 0 0 50px;
+        }
+
+        .sign-in button {
+            margin: 30px 50px 0 0;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .first-writeup {
+            font-size: 25px;
+            padding: 0px 190px;
+            line-height: 59px;
+            margin-top: 100px;
+            margin-bottom: -15px;
+            text-overflow: ellipsis;
+        }
+
+        .second-writeup {
+            font-size: 18px;
+            padding: 0 170px;
+        }
+
+        .third-writeup {
+            font-size: 15px;
+            padding: -80px 160px;
+            position: relative;
+            top: 150px;
+            margin-top: -90px;
+        }
+
+        .email {
+
+        }
+
+        #email {
+            width: 50%;
+            padding: 20px;
+            float: left;
+            margin-left: 160px;
+            margin-top: 60px;
+        }
+
+        #gs-button {
+            float: right;
+            position: relative;
+            margin-top: -72.6px;
+            top: 8px;
+            left: 20px;
+            padding: 20px 45px;
+            margin-right: 155px;
+        }
+
+        .section2-container .part1 {
+            display: flex;
+        }
+
+        .section2-container img {
+            width: 550px;
+            object-fit: cover;
+        }
+
+        .part1 div {
+            display: block;
+            text-align: left;
+            margin-top: 75px;
+            
+        }
+
+        .part1 img {
+            margin: 50px 0 50px 0;
+            width: 500px;
+
+        }
+
+        .part1 div h1 {
+            font-size: 51px;
+            margin-left: 40px;
+            margin-bottom: 0;
+            
+        }
+
+        .part1 h2 {
+            margin-top: -50px;
+            font-size: 26px;
+            padding: 0 40px;
+            line-height: 40px;
+        }
+
+
+
+
+
+        .section2-container .part2 {
+            display: flex;
+
+        }
+
+        .section2-container img {
+            width: 550px;
+            object-fit: cover;
+            
+        }
+
+        .part2 {
+            margin-top: -90px;
+        }
+
+        .part2 div {
+            text-align: left;
+            margin-top: 75px;
+        }
+
+        .part2-texts, .img2-container {
+            flex-basis: 50%;
+            /* flex-shrink: 1;
+            flex-grow: 1; */
+
+        }
+
+        .img2-container {
+            order: -1;
+        }
+
+        .img2-container .img2 {
+            margin-top: 80px;
+            width: 430px;
+        }
+    
+
+        .part2 img {
+            width: 500px;
+
+        }
+
+        .part2 h1 {
+            font-size: 51px;
+            margin-left: 40px;
+            margin-bottom: -80px;
+            line-height: 60px;
+            
+           
+            
+        }
+
+        .part2 h2 {
+            margin-top: -50px;
+            font-size: 26px;
+            padding: 0 40px;
+            line-height: 40px;
+        }
+
+
+
+
+        .section2-container .part3 {
+            display: flex;
+
+        }
+
+        .section2-container img {
+            width: 550px;
+            object-fit: cover;
+            
+        }
+
+        .part3 {
+            margin-top: -90px;
+        }
+
+        .part3 div {
+            text-align: left;
+            margin-top: 75px;
+        }
+
+        .part3-texts, .img3-container {
+            flex-basis: 50%;
+            /* flex-shrink: 1;
+            flex-grow: 1; */
+
+        }
+
+        .img3-container {
+            /* order: -1; */
+        }
+
+        .img3-container .img3 {
+            margin-top: 80px;
+            width: 490px;
+        }
+    
+
+        .part3 img {
+            width: 500px;
+
+        }
+
+        .part3 h1 {
+            font-size: 51px;
+            margin-left: 40px;
+            margin-top: 150px;
+            margin-bottom: -60px;
+            line-height: 60px;
+            
+           
+            
+        }
+
+        .part3 h2 {
+            margin-top: -10px;
+            font-size: 26px;
+            padding: 0 40px;
+            line-height: 40px;
+        }
+
+
+
+
+
+        .faq {
+            padding: 100px 0;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        .faq h1 {
+            font-size: 46px;
+        }
+
+        .faq ul  {
+            margin-bottom: 70px;
+        }
+
+        .faq li {
+            width: 70%;
+            margin: 0 30px 14px 130px;
+            padding: 18px;
+            font-size: 26px;
+        }
+
+        .third-writeup2 {
+            font-size: 13px;
+            padding: -80px 160px;
+            position: relative;
+            top: 150px;
+            margin-top: -90px;
+        }
+
+       
+        #email2 {
+            width: 54%;
+            padding: 20px;
+            /* float: left; */
+            margin-left: -230px;
+            margin-top: 60px;
+        }
+
+        #gs-button2 {
+            float: right;
+            position: relative;
+            margin-top: -72.6px;
+            top: 7px;
+            left: 20px;
+            padding: 20px 45px;
+            margin-right: 155px;
+        }
+
+
+        .footer {
+            margin: 45px 0 0 45px;
+
+        }
+
+        .footer p {
+        }
+
+        .footer ul {
+        -ms-column-count: 4;
+        -o-column-count: 4;
+        -moz-column-count: 4;
+        -khtml-column-count: 4;
+        column-count: 4;
+        }
+
+        .footer li {
+
+        }
+    }
+
+
+
+
+
+    @media screen and (max-width: 1400px) and (min-width: 1025px) {
+        .header {
+            height: 100vh;
+
+        }
+
+        .nav-bar {
+
+        }
+
+        .logo img {
+            width: 140px;
+            margin: -40px 0 0 30px;
+        }
+
+        .sign-in button {
+            margin: 20px 40px 0 0;
+            padding: 7px 17px;
+            font-size: 16px;
+        }
+
+        .first-writeup {
+            font-size: 26px;
+            padding: 0px 290px;
+            line-height: 64px;
+            margin-top: 90px;
+            margin-bottom: 20px;
+        }
+
+        .second-writeup {
+            font-size: 13px;
+            padding: 0 300px;
+        }
+
+        .third-writeup {
+            font-size: 15px;
+            padding: -80px 160px;
+            position: relative;
+            top: 150px;
+            margin-top: -80px;
+        }
+
+        .email {
+
+        }
+
+        #email {
+            width: 40%;
+            padding: 20px;
+            float: left;
+            margin-left: 350px;
+            margin-top: 60px;
+        }
+
+        #gs-button {
+            float: right;
+            position: relative;
+            margin-top: -72.6px;
+            top: 133px;
+            left: -99px;
+            padding: 18.7px 40px;
+            margin-right: 155px;
+        }
+
+
+
+
+
+
+        /* BREAK */
+
+        .section2-container .part1 {
+            display: flex;
+        }
+
+        .section2-container img {
+            width: 550px;
+            object-fit: cover;
+        }
+
+        .part1 div {
+            display: block;
+            text-align: left;
+            margin-top: 80px;
+            margin-bottom: 0px;
+            
+        }
+
+        .part1 img {
+            margin: 0px 0 0px 0;
+            width: 600px;
+
+
+        }
+
+
+        .part1 h1 {
+
+            font-size: 51px;
+            margin-left: 140px;
+            margin-bottom: 0;
+            
+        }
+
+        .part1 h2 {
+
+            margin-top: -30px;
+            font-size: 26px;
+            padding: 0 140px;
+            line-height: 30px;
+        }
+
+        
+        
+
+
+        .section2-container .part2 {
+            display: flex;
+
+        }
+
+        .section2-container img {
+            width: 550px;
+            object-fit: cover;
+            
+        }
+
+        .part2 {
+            margin-top: -90px;
+        }
+
+        .part2 div {
+            text-align: left;
+            margin-top: 75px;
+        }
+
+        .part2-texts, .img2-container {
+            flex-basis: 50%;
+            /* flex-shrink: 1;
+            flex-grow: 1; */
+
+        }
+
+        .img2-container {
+            order: -1;
+        }
+
+        .img2-container .img2 {
+            margin-top: 40px;
+            width: 500px;
+        }
+    
+
+        .part2 img {
+            width: 500px;
+
+        }
+
+        .part2 h1 {
+            padding: 35px;
+            font-size: 51px;
+            margin-left: 10px;
+            margin-bottom: -80px;
+            line-height: 60px;
+            
+           
+            
+        }
+
+        .part2 h2 {
+            margin-top: -50px;
+            font-size: 26px;
+            padding: 0 40px;
+            line-height: 40px;
+        }
+
+
+
+
+        .section2-container .part3 {
+            display: flex;
+
+        }
+
+        .section2-container img {
+            width: 550px;
+            object-fit: cover;
+            
+        }
+
+        .part3 {
+            margin-top: -90px;
+        }
+
+        .part3 div {
+            text-align: left;
+            margin-top: 75px;
+        }
+
+        .part3-texts, .img3-container {
+            flex-basis: 50%;
+            /* flex-shrink: 1;
+            flex-grow: 1; */
+
+        }
+
+        .img3-container {
+            /* order: -1; */
+        }
+
+        .img3-container .img3 {
+            margin-top: 80px;
+            width: 590px;
+        }
+    
+
+        .part3 img {
+            width: 500px;
+
+        }
+
+        .part3 h1 {
+            font-size: 51px;
+            margin-left: 120px;
+            margin-top: 190px;
+            margin-bottom: -60px;
+            line-height: 60px;
+            
+           
+            
+        }
+
+        .part3 h2 {
+            margin-top: -10px;
+            margin-left: 30px;
+            font-size: 26px;
+            padding: 0 90px;
+            line-height: 33px;
+        }
+
+
+
+        .faq {
+            padding: 100px 0;
+            margin-top: -70px;
+            width: 100%;
+        }
+
+        .faq h1 {
+            font-size: 50px;
+        }
+
+        .faq ul  {
+            margin-bottom: 70px;
+        }
+
+        .faq li {
+            width: 55%;
+            margin: 0 30px 14px 290px;
+            padding: 18px;
+            font-size: 26px;
+        }
+
+        .third-writeup2 {
+            font-size: 15px;
+            padding: -80px 160px;
+            position: relative;
+            top: 150px;
+            margin-top: -90px;
+        }
+
+
+
+        #email2 {
+            width: 38%;
+            padding: 20px;
+            /* float: left; */
+            margin-left: -199px;
+            margin-top: 60px;
+        }
+
+        #gs-button2 {
+            float: right;
+            position: relative;
+            margin-top: -72.6px;
+            top: 7px;
+            left: -148px;
+            padding: 20px 45px;
+            margin-right: 155px;
+        }
+
+
+        .footer {
+            margin: 45px 0 0 45px;
+
+        }
+
+        .footer p {
+        }
+
+        .footer ul {
+        -ms-column-count: 4;
+        -o-column-count: 4;
+        -moz-column-count: 4;
+        -khtml-column-count: 4;
+        column-count: 4;
+        }
+
+        .footer li {
+
+        }
+
+    }
+    
+
+    
